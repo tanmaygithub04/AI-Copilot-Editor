@@ -5,6 +5,9 @@ import EditorComponent from './components/Editor';
 import './App.css';
 
 function App() {
+  const handleClick = () => {
+
+  }
   return (
     <div className="App">
       <header>
@@ -13,7 +16,7 @@ function App() {
         </div>
       </header>
 
-      <main>
+      <main onClick={() => {handleClick()}}>
         <EditorComponent />
       </main>
     </div>

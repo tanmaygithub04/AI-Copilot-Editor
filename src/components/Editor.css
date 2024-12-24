@@ -1,39 +1,25 @@
-.editor-content {
-    min-height: 200px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-  }
-  
-  .editor-container {
-    position: relative;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 10px;
-  }
-  
-  .bubble-menu {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    gap: 10px;
-  }
-  
-  .bubble-menu button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .bubble-menu button:hover {
-    background-color: #0056b3;
-  }
-  
+
+.editor-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+/* Hover effect */
+.bubble-menu-button:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+.bubble-menu-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
